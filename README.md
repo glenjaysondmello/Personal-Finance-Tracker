@@ -20,17 +20,6 @@ This is a **Personal Finance Tracker** application that helps users track their 
 
 ---
 
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Project Setup](#project-setup)
-3. [Folder Structure](#folder-structure)
-4. [Running the Project](#running-the-project)
-5. [API Endpoints](#api-endpoints)
-6. [Push to GitHub](#push-to-github)
-
----
-
 ## Prerequisites
 
 Make sure you have the following installed on your system:
