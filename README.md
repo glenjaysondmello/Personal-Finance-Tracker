@@ -48,7 +48,7 @@ This is a full-stack Personal Finance Tracker web application that allows users 
 
 ### 1. Clone the repository
 ```bash
-https://github.com/your-username/finance-tracker.git
+https://github.com/glenjaysondmello/Personal-Finance-Tracker.git
 cd finance-tracker
 ```
 
