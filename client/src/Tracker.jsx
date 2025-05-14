@@ -3,6 +3,8 @@ import { auth } from "./firebase-config";
 import { signInAnonymously } from "firebase/auth";
 import axios from "axios";
 
+// const backendURL = import.meta.env.VITE_BACKEND_URL;
+
 const Tracker = () => {
   const [user, setUser] = useState(null);
   const [transactions, setTransactions] = useState([]);
@@ -22,9 +24,12 @@ const Tracker = () => {
 
   const fetchTransactions = async () => {
     if (user) {
-      const res = await axios.get("http://localhost:8000/transaction", {
-        params: { userId: user.uid },
-      });
+      const res = await axios.get(
+        `https://personal-finance-tracker-40qu.onrender.com/transaction`,
+        {
+          params: { userId: user.uid },
+        }
+      );
       setTransactions(res.data);
     }
   };
@@ -41,7 +46,10 @@ const Tracker = () => {
         userId: user.uid,
         date: `${newTransaction.date}T${newTransaction.time}`,
       };
-      await axios.post("http://localhost:8000/add-transaction", transaction);
+      await axios.post(
+        `https://personal-finance-tracker-40qu.onrender.com/add-transaction`,
+        transaction
+      );
       setNewTransaction({
         amount: "",
         category: "",
