@@ -57,3 +57,6 @@ server/dist/
 
 # Linux
 *.swp
+
+# Firebase service account key
+serviceAccountKey.json

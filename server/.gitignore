@@ -6,6 +6,9 @@ yarn-error.log
 .env.local
 .env.*.local
 
+# Firebase service account key
+serviceAccountKey.json
+
 # Logs
 logs/
 *.log
